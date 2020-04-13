@@ -1,0 +1,12 @@
+{
+  "development": {
+    "apiUrl": "https://darthdev.herokuapp.com",
+    "contentApiKey": "e2fa0144ae3fbefa72fdc576ba",
+    "version": "v2"
+  },
+  "production": {
+    "apiUrl": "https://darthdev.herokuapp.com",
+    "contentApiKey": "e2fa0144ae3fbefa72fdc576ba",
+    "version": "v2"
+  }
+}
