@@ -9,6 +9,10 @@
  * via ids/classnames etc.
  *
  */
+
+// prism plugin for markdown code highlight
+require("prismjs/themes/prism-twilight.css");
+
 var trustAllScripts = function () {
     var scriptNodes = document.querySelectorAll('.load-external-scripts script');
 
