@@ -317,7 +317,7 @@ body {
     font-style: normal;
     letter-spacing: 0;
     text-rendering: optimizeLegibility;
-    background: #fff;
+    background: #252525;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -697,7 +697,11 @@ h6 {
     align-items: center;
     justify-content: space-between;
 }
-
+@media (max-width: 992px){
+    .site-mast-center {
+        display: none;
+    }
+}
 .site-mast-right {
     display: flex;
     align-items: center;
@@ -708,25 +712,26 @@ h6 {
 }
 
 .site-banner {
-    max-width: 80%;
+    display: inline-block;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 6vw 0;
-    text-align: center;
+    padding: 0vw 0;
+    text-align: left;
 }
 
 .site-banner-title {
     margin: 0;
     padding: 0;
     color: #fff;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.3em;
 }
 
 .site-banner-desc {
     margin: 5px 0 0 0;
     padding: 0;
-    font-size: 2.4rem;
-    line-height: 1.3em;
+    font-size: 2.2rem;
+    line-height: 1.1em;
     opacity: 0.7;
 }
 

@@ -33,10 +33,12 @@
   "devDependencies": {
     "babel-eslint": "10.1.0",
     "eslint": "6.8.0",
+    "eslint-plugin-emotion": "^10.0.27",
     "eslint-plugin-ghost": "1.0.0",
     "eslint-plugin-react": "7.18.3"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.28",
     "@tryghost/helpers": "1.1.22",
     "@tryghost/helpers-gatsby": "1.0.25",
     "cheerio": "1.0.0-rc.3",

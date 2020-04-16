@@ -35,7 +35,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
                 <div className="viewport-top">
                     {/* The main header section on top of the screen */}
-                    <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
+                    <header className="site-head" >
                         <div className="container">
                             <div className="site-mast">
                                 <div className="site-mast-left">
@@ -46,18 +46,19 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                         }
                                     </Link>
                                 </div>
+                                <div className="site-mast-center">
+                                    <div className="site-banner">
+                                        <h1 className="site-banner-title">{site.title}</h1>
+                                        <p className="site-banner-desc">Diario de un Developer desde Argentina. Codigo, Politiks y LifeStyle </p>
+                                    </div>
+                                </div>
                                 <div className="site-mast-right">
                                     { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
                                     { site.facebook && <a href={ facebookUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>}
                                     <a className="site-nav-item" href={ `https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a>
                                 </div>
                             </div>
-                            { isHome ?
-                                <div className="site-banner">
-                                    <h1 className="site-banner-title">{site.title}</h1>
-                                    <p className="site-banner-desc">Diario de un Developer desde Argentina. Codigo, Politiks y LifeStyle </p>
-                                </div> :
-                                null}
+                            
                             <nav className="site-nav">
                                 <div className="site-nav-left">
                                     {/* The navigation items as setup in Ghost */}
